@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asif Mohammed Fahad · Android Developer</title>
+<meta name="description" content="Asif Mohammed Fahad: tech enthusiast and learning Android developer. Simple, joyful apps, made in Dreamland. Apps, privacy policies and contact.">
+<link rel="icon" href="images/icon-512.jpg">
+<style>
+  :root {
+    --navy: #0a1942; --blue: #186edc; --gold: #ffc440; --ink: #1b2440; --muted: #5a6478;
+    --bg: #f5f7fc; --card: #ffffff; --line: #e3e8f3; --green: #1e6a56;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--blue); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 18px; }
+
+  /* Top bar */
+  nav { position: sticky; top: 0; z-index: 10; background: rgba(10, 25, 66, .92); backdrop-filter: blur(6px); }
+  nav .wrap { display: flex; align-items: center; gap: 16px; height: 56px; }
+  nav .brand { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 600; white-space: nowrap; }
+  nav .brand img { width: 32px; height: 32px; border-radius: 8px; }
+  nav .links { margin-left: auto; display: flex; gap: 18px; overflow-x: auto; }
+  nav .links a { color: #d6e2ff; text-decoration: none; font-size: 15px; white-space: nowrap; }
+  nav .links a:hover { color: var(--gold); }
+
+  /* Hero: night sky, sea on the left, hills on the right */
+  .hero { position: relative; overflow: hidden; color: #fff; text-align: center;
+          background: linear-gradient(155deg, var(--navy) 0%, #12398a 55%, var(--blue) 100%); padding: 72px 0 170px; }
+  .hero img.badge { width: 150px; height: 150px; border-radius: 50%; box-shadow: 0 10px 40px rgba(0,0,0,.35); }
+  .hero h1 { font-size: clamp(32px, 6vw, 52px); margin: 22px 0 4px; letter-spacing: .3px; }
+  .hero .tag { color: var(--gold); font-size: clamp(17px, 2.6vw, 21px); margin: 0; }
+  .hero .role { color: #c9d7f5; margin: 10px 0 0; }
+  .hero svg { position: absolute; left: 0; bottom: -1px; width: 100%; height: 150px; }
+
+  section { padding: 56px 0 8px; }
+  h2 { font-size: 28px; margin: 0 0 6px; }
+  h2 + .sub { color: var(--muted); margin: 0 0 24px; }
+  .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px 22px; }
+  .card h3 { margin: 0 0 4px; font-size: 19px; }
+  .card .meta { color: var(--muted); font-size: 14.5px; margin: 0 0 8px; }
+  .card p { margin: 6px 0; }
+  .pill { display: inline-block; font-size: 13px; padding: 2px 10px; border-radius: 99px; background: #eef3ff; color: #2a4fa8; margin: 3px 4px 3px 0; }
+  .pill.gold { background: #fff4d6; color: #8a5a00; }
+  .pill.green { background: #e3f4ec; color: var(--green); }
+  ul.clean { margin: 6px 0; padding-left: 20px; }
+  ul.clean li { margin: 3px 0; }
+
+  .tech { background: linear-gradient(135deg, #0f2560, #1a4fb0); color: #fff; border-radius: 22px; padding: 28px 24px; }
+  .tech h2 { color: #fff; }
+  .tech .sub { color: #c9d7f5; }
+  .tech .card { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.18); color: #fff; }
+  .tech .card .meta { color: #c9d7f5; }
+  .tech .pill { background: rgba(255,255,255,.14); color: #fff; }
+  .tech .pill.gold { background: rgba(255,196,64,.22); color: #ffe3a1; }
+
+  .app { display: flex; gap: 16px; align-items: flex-start; }
+  .app .ico { flex: 0 0 64px; height: 64px; border-radius: 16px; display: grid; place-items: center; font-size: 32px; }
+  .status { font-size: 13.5px; color: var(--muted); }
+
+  .contact { text-align: center; }
+  .btn { display: inline-block; background: var(--navy); color: #fff; text-decoration: none; padding: 12px 22px; border-radius: 12px; margin: 6px; font-weight: 600; }
+  .btn.alt { background: #fff; color: var(--navy); border: 1px solid var(--line); }
+
+  footer { margin-top: 64px; background: var(--navy); color: #c9d7f5; padding: 26px 0; font-size: 15px; }
+  footer a { color: var(--gold); }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: space-between; }
+
+  @media (max-width: 560px) {
+    nav .brand span { display: none; }
+    .hero { padding: 52px 0 140px; }
+    .app { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="images/icon-512.jpg" alt=""><span>Asif Mohammed Fahad</span></a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#tech">Tech</a>
+      <a href="#apps">Apps</a>
+      <a href="#background">Background</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <img class="badge" src="images/icon-512.jpg" alt="AMF logo">
+    <h1>Asif Mohammed Fahad</h1>
+    <p class="tag">Simple, joyful apps &middot; Made in Dreamland</p>
+    <p class="role">Tech enthusiast &middot; Android developer in the making</p>
+  </div>
+  <svg viewBox="0 0 1440 150" preserveAspectRatio="none" aria-hidden="true">
+    <rect x="0" y="70" width="1440" height="80" fill="#2a6bb3"/>
+    <path d="M0 150 V100 H1440 V150Z" fill="#1d4f8e"/>
+    <path d="M760 150 C900 120 980 30 1090 28 C1180 26 1210 70 1290 50 C1360 34 1400 20 1440 26 V150Z" fill="#3a707a"/>
+    <path d="M860 150 C990 120 1060 70 1160 66 C1250 62 1300 95 1370 78 C1410 70 1430 64 1440 64 V150Z" fill="#1e6a56"/>
+    <path d="M980 150 C1090 128 1170 108 1260 110 C1340 112 1390 100 1440 98 V150Z" fill="#12503a"/>
+    <path d="M0 150 V146 H1440 V150Z" fill="#f5f7fc"/>
+  </svg>
+</header>
+
+<main class="wrap">
+
+  <section id="about">
+    <h2>About me</h2>
+    <p class="sub">Tech enthusiast who loves turning ideas into apps.</p>
+    <div class="card">
+      <p>I am a tech enthusiast who enjoys learning how things work and then building them myself. I hold a <b>Master of Social Sciences (M.S.S.) in International Relations</b> from the University of Chittagong, and my curiosity about technology led me to Android development.</p>
+      <p>I make apps to create the kind of simple, calm, useful tools I would want for my own family: apps that help children learn and help students prepare for exams, without clutter. Every app I publish teaches me something new.</p>
+      <p>
+        <span class="pill">Tech enthusiast</span>
+        <span class="pill">Problem solving</span>
+        <span class="pill">Research</span>
+        <span class="pill">English &amp; Bangla</span>
+        <span class="pill gold">Android (learning)</span>
+      </p>
+    </div>
+  </section>
+
+  <section id="tech">
+    <div class="tech">
+      <h2>Tech: Android developer, still learning</h2>
+      <p class="sub">I am a self-taught, early-stage developer. I learn by building real apps, one feature at a time, and I keep improving them.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>What I use now</h3>
+          <p class="meta">Tools in my current apps</p>
+          <span class="pill">Java</span><span class="pill">Android SDK</span><span class="pill">Android Studio</span>
+          <span class="pill">Gradle</span><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span>
+          <span class="pill">WebView</span><span class="pill">Google Play Billing</span><span class="pill">Text-to-Speech</span>
+        </div>
+        <div class="card">
+          <h3>What I am learning next</h3>
+          <p class="meta">My learning path</p>
+          <span class="pill gold">Kotlin</span><span class="pill gold">Jetpack Compose</span><span class="pill gold">Room database</span>
+          <span class="pill gold">Testing</span><span class="pill gold">Accessibility</span><span class="pill gold">App performance</span>
+        </div>
+        <div class="card">
+          <h3>How I build</h3>
+          <p class="meta">Principles I follow</p>
+          <ul class="clean">
+            <li>Collect as little data as possible</li>
+            <li>Clear privacy policy for every app</li>
+            <li>Follow Google Play policies, including Families rules for kids' apps</li>
+            <li>Work offline where I can</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apps">
+    <h2>My apps</h2>
+    <p class="sub">Apps I am preparing for Google Play. Each app has its own privacy policy.</p>
+    <div class="grid">
+      <div class="card app">
+        <div class="ico" style="background:#fff4d6">🧸</div>
+        <div>
+          <h3>Tiny Explorers: Kids Learning</h3>
+          <p class="status">Coming soon to Google Play &middot; Education &middot; ages 2–6</p>
+          <p>A gentle learning app for young children in English and Bangla: stories, ABC and বর্ণমালা, numbers, science, countries and everyday skills, all read aloud. No ads, no accounts, no tracking. Optional one-time unlock behind a parent check.</p>
+          <p><span class="pill green">No ads</span><span class="pill green">No data collected</span></p>
+          <p><a href="tiny-explorers/privacy-policy.html">Privacy policy</a></p>
+        </div>
+      </div>
+      <div class="card app">
+        <div class="ico" style="background:#ece8ff">📚</div>
+        <div>
+          <h3>LexiPrep: GRE IELTS SAT Words</h3>
+          <p class="status">Coming soon to Google Play &middot; Education &middot; teens and adults</p>
+          <p>A vocabulary app for GRE, GMAT, IELTS and SAT learners: thousands of exam words with picture mnemonics, short stories, Bangla meanings, smart review and quizzes. Study progress stays on the phone. Free, supported by ads.</p>
+          <p><span class="pill">Works offline</span><span class="pill">No account needed</span></p>
+          <p><a href="lexiprep/privacy-policy.html">Privacy policy</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="background">
+    <h2>Education &amp; activities</h2>
+    <p class="sub">Where my curiosity started.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>University of Chittagong</h3>
+        <p class="meta">M.S.S. 2015 (GPA 3.54/4) &middot; B.S.S. 2012 (GPA 3.43/4)</p>
+        <p>Master's thesis on the security of vulnerable minority groups in Bangladesh. UGC Scholarship for academic excellence, first in the B.S.S. (Hons.) degree.</p>
+      </div>
+      <div class="card">
+        <h3>Awards &amp; activities</h3>
+        <p class="meta">Highlights</p>
+        <ul class="clean">
+          <li>HPAIR Asia Conference Scholar, 2018 (Harvard Project for Asian and International Relations)</li>
+          <li>University debater (British Parliamentary format)</li>
+          <li>Helped found the Chittagong University Model United Nations Association</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p class="sub">Questions about my apps, support or privacy? Email me. I read every message.</p>
+    <a class="btn" href="mailto:asifircu13@gmail.com">✉ asifircu13@gmail.com</a>
+    <a class="btn alt" href="https://www.linkedin.com/in/asif-mohammed-fahad" target="_blank" rel="noopener">LinkedIn</a>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Asif Mohammed Fahad &middot; Made in Dreamland</span>
+    <span>Privacy: <a href="tiny-explorers/privacy-policy.html">Tiny Explorers</a> &middot; <a href="lexiprep/privacy-policy.html">LexiPrep</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
