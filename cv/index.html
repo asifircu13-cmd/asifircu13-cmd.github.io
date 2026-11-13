@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asif Mohammed Fahad · Principal Officer, Sonali Bank PLC</title>
+<meta name="description" content="Asif Mohammed Fahad — Principal Officer at Sonali Bank PLC, Chattogram. Commercial banking, credit management and trade finance. M.S.S. International Relations, AIBB.">
+<link rel="icon" href="/images/icon-512.jpg">
+<style>
+  :root {
+    --navy: #0a1942; --navy-2: #12398a; --blue: #186edc; --gold: #ffc440;
+    --ink: #1b2440; --muted: #5a6478; --bg: #f5f7fc; --card: #ffffff;
+    --line: #e3e8f3; --green: #1e6a56;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--blue); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 18px; }
+
+  /* Top bar */
+  nav { position: sticky; top: 0; z-index: 10; background: rgba(10, 25, 66, .94); backdrop-filter: blur(6px); }
+  nav .wrap { display: flex; align-items: center; gap: 14px; height: 56px; }
+  nav .brand { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 700; white-space: nowrap; }
+  nav .brand .mono { width: 32px; height: 32px; border-radius: 50%; background: var(--gold); color: var(--navy); display: grid; place-items: center; font-size: 13px; font-weight: 800; letter-spacing: .5px; }
+  nav .links { margin-left: auto; display: flex; gap: 18px; overflow-x: auto; }
+  nav .links a { color: #d6e2ff; text-decoration: none; font-size: 15px; white-space: nowrap; }
+  nav .links a:hover { color: var(--gold); }
+
+  /* Hero */
+  .hero { position: relative; overflow: hidden; color: #fff; text-align: center;
+          background: linear-gradient(155deg, var(--navy) 0%, var(--navy-2) 55%, var(--blue) 100%); padding: 76px 0 64px; }
+  .hero .mono { width: 132px; height: 132px; margin: 0 auto; border-radius: 50%; background: var(--gold); color: var(--navy);
+          display: grid; place-items: center; font-size: 46px; font-weight: 800; letter-spacing: 1px;
+          box-shadow: 0 10px 40px rgba(0,0,0,.35); border: 4px solid rgba(255,255,255,.35); }
+  .hero h1 { font-size: clamp(32px, 6vw, 52px); margin: 24px 0 4px; letter-spacing: .3px; }
+  .hero .tag { color: var(--gold); font-size: clamp(17px, 2.6vw, 21px); margin: 0; font-weight: 600; }
+  .hero .role { color: #c9d7f5; margin: 12px 0 0; }
+  .hero .cta { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  .btn { display: inline-block; background: var(--gold); color: var(--navy); text-decoration: none; padding: 12px 22px; border-radius: 12px; font-weight: 700; border: none; cursor: pointer; font-size: 16px; }
+  .btn.ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.55); }
+  .btn.ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+  section { padding: 52px 0 8px; }
+  h2 { font-size: 28px; margin: 0 0 6px; }
+  h2 + .sub { color: var(--muted); margin: 0 0 24px; }
+  .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px 22px; }
+  .card h3 { margin: 0 0 4px; font-size: 19px; }
+  .card .meta { color: var(--muted); font-size: 14.5px; margin: 0 0 8px; }
+  .card p { margin: 6px 0; }
+  .pill { display: inline-block; font-size: 13px; padding: 2px 10px; border-radius: 99px; background: #eef3ff; color: #2a4fa8; margin: 3px 4px 3px 0; }
+  .pill.gold { background: #fff4d6; color: #8a5a00; }
+  .pill.green { background: #e3f4ec; color: var(--green); }
+  ul.clean { margin: 6px 0; padding-left: 20px; }
+  ul.clean li { margin: 3px 0; }
+
+  /* Timeline */
+  .timeline { position: relative; margin-left: 8px; padding-left: 26px; border-left: 3px solid var(--line); }
+  .job { position: relative; padding: 0 0 26px; }
+  .job:last-child { padding-bottom: 0; }
+  .job::before { content: ""; position: absolute; left: -34px; top: 6px; width: 13px; height: 13px; border-radius: 50%; background: var(--gold); border: 3px solid var(--navy); }
+  .job h3 { margin: 0; font-size: 20px; }
+  .job .where { color: var(--muted); font-size: 15px; margin: 2px 0 8px; }
+  .job .when { display: inline-block; font-size: 13.5px; font-weight: 700; color: var(--navy); background: #eef3ff; border-radius: 99px; padding: 2px 12px; margin-bottom: 8px; }
+  .job .when.current { background: var(--gold); }
+
+  /* Dark band */
+  .band { background: linear-gradient(135deg, #0f2560, #1a4fb0); color: #fff; border-radius: 22px; padding: 28px 24px; }
+  .band h2 { color: #fff; }
+  .band .sub { color: #c9d7f5; }
+  .band .card { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.18); color: #fff; }
+  .band .card .meta { color: #c9d7f5; }
+  .band .pill { background: rgba(255,255,255,.14); color: #fff; }
+  .band .pill.gold { background: rgba(255,196,64,.22); color: #ffe3a1; }
+
+  .app { display: flex; gap: 16px; align-items: flex-start; }
+  .app .ico { flex: 0 0 64px; height: 64px; border-radius: 16px; display: grid; place-items: center; font-size: 32px; }
+  .status { font-size: 13.5px; color: var(--muted); }
+
+  .contact { text-align: center; }
+  .btn.dark { background: var(--navy); color: #fff; }
+  .btn.alt { background: #fff; color: var(--navy); border: 1px solid var(--line); }
+
+  footer { margin-top: 64px; background: var(--navy); color: #c9d7f5; padding: 26px 0; font-size: 15px; }
+  footer a { color: var(--gold); }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: space-between; }
+
+  @media (max-width: 560px) {
+    nav .brand span { display: none; }
+    .hero { padding: 56px 0 48px; }
+    .app { flex-direction: column; }
+  }
+
+  @media print {
+    nav, .hero .cta, .contact .btn, footer { display: none !important; }
+    body { background: #fff; font-size: 13px; }
+    .hero { padding: 30px 0; }
+    section { padding: 22px 0 4px; }
+    .band { background: none; color: var(--ink); padding: 0; }
+    .band h2, .band .card { color: var(--ink); }
+    .band .sub, .band .card .meta { color: var(--muted); }
+    .band .card { background: #fff; border-color: var(--line); }
+    #apps { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mono">AF</span><span>Asif Mohammed Fahad</span></a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#apps">Apps</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="mono">AF</div>
+    <h1>Asif Mohammed Fahad</h1>
+    <p class="tag">Principal Officer · Sonali Bank PLC</p>
+    <p class="role">Commercial Banking · Credit Management · Trade Finance<br>Chattogram, Bangladesh</p>
+    <div class="cta">
+      <a class="btn" href="mailto:asifircu13@gmail.com">✉ asifircu13@gmail.com</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/asif-mohammed-fahad-6ab18383/" target="_blank" rel="noopener">LinkedIn</a>
+      <button class="btn ghost" type="button" onclick="window.print()">⬇ Download CV (PDF)</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="about">
+    <h2>About me</h2>
+    <p class="sub">Banking professional — credit, foreign exchange and general banking.</p>
+    <div class="card">
+      <p>Motivated banking professional with extensive experience across credit administration, foreign exchange operations, and general banking in leading commercial banks in Bangladesh. Currently serving as <b>Principal Officer at Sonali Bank PLC</b>.</p>
+      <p>I hold a <b>Master of Social Sciences (M.S.S.) in International Relations</b> — First Position in B.S.S. (Hons.) — and <b>Associate of the Institute of Bankers, Bangladesh (AIBB)</b> credentials, combining strong analytical capabilities with effective bilingual communication in English and Bengali.</p>
+      <p>
+        <span class="pill gold">Principal Officer, Sonali Bank PLC</span>
+        <span class="pill">AIBB</span>
+        <span class="pill">First Position, B.S.S. (Hons.)</span>
+        <span class="pill">Credit Management</span>
+        <span class="pill">Trade Finance</span>
+        <span class="pill">English &amp; Bangla</span>
+      </p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p class="sub">Ten years in commercial banking — from trainee officer to principal officer.</p>
+    <div class="timeline">
+      <div class="job">
+        <span class="when current">Jan 2026 – Present</span>
+        <h3>Principal Officer — Sonali Bank PLC</h3>
+        <p class="where">Chattogram, Bangladesh · The largest commercial bank in Bangladesh</p>
+        <p>Manage commercial loan and advance portfolios, overseeing credit appraisal, sanctioning documentation, disbursement, and client relationship administration. Execute core banking operations, credit monitoring, and regulatory reporting in alignment with institutional and central bank guidelines.</p>
+      </div>
+      <div class="job">
+        <span class="when">May 2019 – Dec 2025</span>
+        <h3>Senior Officer — Sonali Bank PLC</h3>
+        <p class="where">Chattogram, Bangladesh</p>
+        <p>Loans and advances administration, credit appraisal and sanctioning documentation, core banking operations and regulatory reporting.</p>
+      </div>
+      <div class="job">
+        <span class="when">Oct 2017 – Apr 2019</span>
+        <h3>Senior Officer, Foreign Exchange — Social Islami Bank PLC</h3>
+        <p class="where">Dhaka, Bangladesh</p>
+        <p>Handled foreign exchange transactions, import/export trade documentation, and international banking settlements in accordance with regulatory standards.</p>
+      </div>
+      <div class="job">
+        <span class="when">Aug 2015 – Nov 2015</span>
+        <h3>Trainee Officer, General Banking — Export Import (EXIM) Bank PLC</h3>
+        <p class="where">Chattogram, Bangladesh</p>
+        <p>Daily general banking activities, account opening and administration, and customer service operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education &amp; banking diplomas</h2>
+    <p class="sub">University of Chittagong · Institute of Bankers, Bangladesh.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>M.S.S. — International Relations</h3>
+        <p class="meta">University of Chittagong · 2013 – 2015 · GPA 3.54 / 4.00</p>
+        <p>Master's thesis (2014 – 2015): “Exploitation of Religious Minorities in Bangladesh under the 21st Century Democratic Regime: Seeking a Security Model to Protect Vulnerable Groups.”</p>
+      </div>
+      <div class="card">
+        <h3>B.S.S. (Hons.) — International Relations</h3>
+        <p class="meta">University of Chittagong · 2009 – 2012 · GPA 3.43 / 4.00</p>
+        <p><b>First Position</b> in the B.S.S. (Hons.) degree examination — UGC Scholarship for Academic Excellence (2014).</p>
+      </div>
+      <div class="card">
+        <h3>AIBB — Associate of the Institute of Bankers, Bangladesh</h3>
+        <p class="meta">The Institute of Bankers, Bangladesh · Completed 2023</p>
+        <p>Associate membership of the Institute of Bankers, Bangladesh.</p>
+      </div>
+      <div class="card">
+        <h3>JAIBB — Junior Associate of the Institute of Bankers, Bangladesh</h3>
+        <p class="meta">The Institute of Bankers, Bangladesh · Completed 2021</p>
+        <p>Junior Associate membership of the Institute of Bankers, Bangladesh.</p>
+      </div>
+      <div class="card">
+        <h3>H.S.C. — Higher Secondary Certificate</h3>
+        <p class="meta">Govt. Hazi Muhammad Mohsin College · 2005 – 2007 · GPA 4.00 / 5.00</p>
+      </div>
+      <div class="card">
+        <h3>S.S.C. — Secondary School Certificate</h3>
+        <p class="meta">Bangladesh Military Academy · 2003 – 2005 · GPA 5.00 / 5.00</p>
+        <p>Area Commandant Scholarship (2005) and Junior Scholarship (2002).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="training">
+    <h2>Specialized banking training</h2>
+    <p class="sub">Trade finance, credit management and compliance.</p>
+    <div class="card">
+      <ul class="clean">
+        <li><b>International Trade and Foreign Exchange Management</b> — Bangladesh Institute of Bank Management (BIBM), Sep 2026</li>
+        <li><b>International Trade and Foreign Exchange</b> — Sonali Bank Training Institute (SBTI), Chattogram, Aug 2026</li>
+        <li><b>International Trade Payment and Finance Management</b> — BIBM, May 2023</li>
+        <li><b>Credit Management: General Loans and Advances</b> — SBTI, Chattogram, Mar 2022</li>
+        <li><b>AML &amp; CFT with Special Session in Trade-Based ML Prevention</b> — SIBL Training Institute, Dhaka, Apr 2019</li>
+        <li><b>Foundation Course for Newly Appointed Senior Officer / Officer</b> — Sonali Bank Staff College, Dhaka, Aug 2018</li>
+        <li><b>Foundation Course in Banking for Probationary Officers</b> — SIBL Training Institute, Dhaka, Feb 2018</li>
+        <li><b>Foundation Training Course for Trainee Officers</b> — EXIM Bank Training and Research Academy, Aug 2015</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="band">
+      <h2>Skills &amp; languages</h2>
+      <p class="sub">Banking, analytical and technical — plus English and Bangla.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Banking &amp; finance</h3>
+          <p>
+            <span class="pill">Core Banking Solution (CBS)</span><span class="pill">Loans &amp; Advances</span><span class="pill">Foreign Exchange Operations</span><span class="pill">Credit Management</span><span class="pill">Trade Finance</span><span class="pill">Financial Reporting</span><span class="pill">AML &amp; CFT</span>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Analytical &amp; technical</h3>
+          <p>
+            <span class="pill">Research Methodology</span><span class="pill">SPSS</span><span class="pill">Microsoft Office</span><span class="pill gold">Java</span><span class="pill gold">HTML</span><span class="pill gold">SEO</span><span class="pill gold">Android (learning)</span>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Leadership &amp; languages</h3>
+          <p>
+            <span class="pill">Leadership</span><span class="pill">Effective Communication</span><span class="pill green">Bengali — Native</span><span class="pill green">English — Proficient</span>
+          </p>
+          <p class="meta">Research: HPAIR Asia Conference participant, Sunway University, Malaysia (Aug 2018). Co-founded the Chittagong University Model United Nations Association; British Parliamentary debater.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="honors">
+    <h2>Honors &amp; awards</h2>
+    <p class="sub">Recognition for academic and conference work.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>HPAIR Asia Conference Scholar</h3>
+        <p class="meta">Harvard Project for Asian and International Relations · 2018</p>
+        <p>Awarded for performance and achievement at The Asia Conference, Sunway University, Malaysia.</p>
+      </div>
+      <div class="card">
+        <h3>UGC Scholarship for Academic Excellence</h3>
+        <p class="meta">University Grants Commission · 2014</p>
+        <p>Awarded for securing First Position in the B.S.S. (Hons.) degree examination.</p>
+      </div>
+      <div class="card">
+        <h3>Area Commandant Scholarship</h3>
+        <p class="meta">2005</p>
+        <p>Awarded for securing GPA 5.00 in the S.S.C. examination.</p>
+      </div>
+      <div class="card">
+        <h3>Junior Scholarship</h3>
+        <p class="meta">2002</p>
+        <p>Awarded for outstanding performance in the Junior Scholarship examination.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="apps">
+    <h2>My apps</h2>
+    <p class="sub">Apps I am preparing for Google Play. Each app has its own privacy policy.</p>
+    <div class="grid">
+      <div class="card app">
+        <div class="ico" style="background:#fff4d6">🧸</div>
+        <div>
+          <h3>Tinkopolis: Kids Learn</h3>
+          <p class="status">Coming soon to Google Play · Education · ages 2–6</p>
+          <p>A gentle learning app for young children in English and Bangla: animated shows, stories, ABC and বর্ণমালা, numbers, science, countries and everyday skills, all read aloud. No ads, no accounts, no tracking, works offline.</p>
+          <p><span class="pill green">No ads</span><span class="pill green">No data collected</span><span class="pill">Works offline</span></p>
+          <p><a href="/tinkopolis/privacy-policy.html">Privacy policy</a></p>
+        </div>
+      </div>
+      <div class="card app">
+        <div class="ico" style="background:#ece8ff">📚</div>
+        <div>
+          <h3>LexiPrep: GRE IELTS SAT Words</h3>
+          <p class="status">Coming soon to Google Play · Education · teens and adults</p>
+          <p>A vocabulary app for GRE, GMAT, IELTS and SAT learners: thousands of exam words with picture mnemonics, short stories, Bangla meanings, smart review and quizzes. Study progress stays on the phone. Free, supported by ads.</p>
+          <p><span class="pill">Works offline</span><span class="pill">No account needed</span></p>
+          <p><a href="/lexiprep/privacy-policy.html">Privacy policy</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p class="sub">Questions about my work, or about my apps and their privacy? Email me. I read every message.</p>
+    <a class="btn dark" href="mailto:asifircu13@gmail.com">✉ asifircu13@gmail.com</a>
+    <a class="btn alt" href="https://www.linkedin.com/in/asif-mohammed-fahad-6ab18383/" target="_blank" rel="noopener">LinkedIn</a>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Asif Mohammed Fahad · Chattogram, Bangladesh</span>
+    <span>Privacy: <a href="/tinkopolis/privacy-policy.html">Tinkopolis</a> · <a href="/lexiprep/privacy-policy.html">LexiPrep</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
